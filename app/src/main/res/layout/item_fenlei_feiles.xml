@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_fenlei_item"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:theme="@style/CheckBox" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/ivFileImg"
+            android:layout_width="50dp"
+            android:scaleType="fitXY"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/png_book" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/ivFileImg"
+            android:layout_marginLeft="@dimen/margin_lv_0"
+            android:layout_toRightOf="@id/ivFileImg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="大秦王朝"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_lv_2" />
+
+            <TextView
+                android:id="@+id/tvDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="2022.12.14"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_lv_1" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

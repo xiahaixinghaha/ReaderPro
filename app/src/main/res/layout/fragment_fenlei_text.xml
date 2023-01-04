@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fenlei_page_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_lv_0"
+        android:layout_marginRight="@dimen/margin_lv_0"
+        android:layout_marginBottom="@dimen/margin_lv_0"
+        android:background="@drawable/bg_fenlei_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_lv_0"
+        android:paddingTop="@dimen/margin_lv_1"
+        android:paddingRight="@dimen/margin_lv_0"
+        android:paddingBottom="@dimen/margin_lv_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xuanzefenlei"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_lv_0" />
+
+            <TextView
+                android:id="@+id/tvFenLei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.5"
+                android:background="@drawable/bg_fenlei_all"
+                android:drawableRight="@mipmap/png_down"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_lv_1"
+                android:paddingTop="@dimen/padding_lv_0"
+                android:paddingRight="@dimen/padding_lv_1"
+                android:paddingBottom="@dimen/padding_lv_0"
+                android:text="@string/all"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_lv_00" />
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_lv_1"
+                android:layout_weight="1"
+                android:background="@drawable/bg_fenlei_delete"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_lv_1"
+                android:paddingTop="@dimen/padding_lv_0"
+                android:paddingRight="@dimen/padding_lv_1"
+                android:paddingBottom="@dimen/padding_lv_0"
+                android:text="删除"
+                android:textColor="#f32c12"
+                android:textSize="@dimen/text_size_lv_00"
+                android:visibility="invisible" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:id="@+id/checkboxAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="全选"
+                android:textColor="@color/white"
+                android:theme="@style/CheckBox"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvBooks"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_lv_0" />
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+    </LinearLayout>
+
+</LinearLayout>

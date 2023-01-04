@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fenlei_page_bg"
+    android:orientation="vertical">
+
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:background="@color/fenlei_page_bg_2">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ab_back" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="文件名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

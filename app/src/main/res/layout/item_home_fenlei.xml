@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_home_item_1"
+    android:orientation="horizontal"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/ivItemImg"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/png_fenlei_1" />
+
+    <TextView
+        android:id="@+id/tvItemImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:text="历史传记"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_lv_0"
+        android:textStyle="bold" />
+</LinearLayout>

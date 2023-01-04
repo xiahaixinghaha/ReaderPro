@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_page_bg"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="30dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="30dp"
+    tools:context="com.xhx.bookread.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/llContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivPic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:padding="8dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/home_logo"
+                android:text="打开" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivIndex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tvTT"
+                        android:layout_alignBottom="@id/tvTT"
+                        android:src="@drawable/pic_line_white" />
+
+                    <TextView
+                        android:id="@+id/tvTT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/ivIndex"
+                        android:text="精选有声书"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lookAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@id/ivNext"
+                        android:gravity="center_vertical"
+                        android:text="查看全部"
+                        android:textSize="20sp"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/ivNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/lookAll"
+                        android:layout_alignBottom="@id/lookAll"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/png_next_grey" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi11"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi12"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi13"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi21"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi22"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <com.xhx.bookread.view.ViewHomeItem
+                            android:visibility="invisible"
+                            android:id="@+id/vhi23"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/ivIndex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tvTT1"
+                    android:layout_alignBottom="@id/tvTT1"
+                    android:src="@drawable/pic_line_white" />
+
+                <TextView
+                    android:id="@+id/tvTT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/ivIndex1"
+                    android:text="图书推荐"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lookAll1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_toLeftOf="@id/ivNext1"
+                    android:gravity="center_vertical"
+                    android:text="查看全部"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/ivNext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/lookAll1"
+                    android:layout_alignBottom="@id/lookAll1"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/png_next_grey" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="20dp"
+                android:id="@+id/rvBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRequestPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_home_item_5"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:text="开启权限"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</FrameLayout>

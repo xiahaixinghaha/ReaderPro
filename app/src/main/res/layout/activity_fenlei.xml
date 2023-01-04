@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fenlei_page_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/fenlei_page_bg_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_marginLeft="@dimen/margin_lv_00"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@mipmap/ab_back" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_marginLeft="60dp"
+            android:id="@+id/tabLayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            app:tabIndicatorAnimationMode="elastic"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="5dp"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorGravity="bottom"
+            app:tabMode="scrollable"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white" />
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/ic_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@id/tabLayout" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabLayout"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

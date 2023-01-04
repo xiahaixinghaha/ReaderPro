@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_fenlei_all.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_fenlei_content.xml" value="0.127" />
+        <entry key="app/src/main/res/drawable/bg_fenlei_delete.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_fenlei_item.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_home_item_1.xml" value="0.153" />
+        <entry key="app/src/main/res/drawable/seekbar_battery_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/seekbar_battery_night_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/seekbar_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/seekbar_thumb.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/theme_gray_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/theme_green_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/theme_night_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/theme_white_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/theme_yellow_bg.xml" value="0.195" />
+        <entry key="app/src/main/res/drawable/thumb.xml" value="0.1375" />
+        <entry key="app/src/main/res/drawable/toc_item_icon_selector.xml" value="0.1325" />
+        <entry key="app/src/main/res/drawable/touch_bg.xml" value="0.1325" />
+        <entry key="app/src/main/res/drawable/volume_checkbox_selector.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_fenlei.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_read.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_read_epub.xml" value="0.14583333333333334" />
+        <entry key="app/src/main/res/layout/activity_read_epub1.xml" value="0.20277777777777778" />
+        <entry key="app/src/main/res/layout/activity_read_pdf.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_v_and_v_player.xml" value="0.12445175438596491" />
+        <entry key="app/src/main/res/layout/common_progress_view.xml" value="0.13451086956521738" />
+        <entry key="app/src/main/res/layout/common_toolbar.xml" value="0.15534420289855072" />
+        <entry key="app/src/main/res/layout/fragment_epub_reader.xml" value="0.14583333333333334" />
+        <entry key="app/src/main/res/layout/fragment_fenlei_text.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_book_read_toc_list.xml" value="0.13451086956521738" />
+        <entry key="app/src/main/res/layout/item_bottom_tj.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_fenlei_feiles.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_read_mark.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/layout/item_read_theme.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/layout/layout_battery_progress.xml" value="0.20185185185185187" />
+        <entry key="app/src/main/res/layout/layout_read_aa_set.xml" value="0.1125" />
+        <entry key="app/src/main/res/layout/layout_read_mark.xml" value="0.1125" />
+        <entry key="app/src/main/res/layout/layout_tab_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/view_pdf_page.xml" value="0.15534420289855072" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
